@@ -30,7 +30,9 @@ else {
 }
 //console.log(sale)
 
-
+//arrotondamento del prezzo 
+finalPrice = (priceTicket - sale)
+roundedFinalPrice = finalPrice.toFixed(2)
 //Generare un output per l utente
 
-document.getElementById("price_ticket").innerHTML = "Il prezzo del tuo biglietto è: " + (priceTicket - sale) + "Euro"
+document.getElementById("price_ticket").innerHTML = "Il prezzo del tuo biglietto è: " + roundedFinalPrice + " Euro"

@@ -17,16 +17,20 @@ const priceTicket = (distance * priceForKm)
 
 //Applicare uno sconto in base all età
 if (user_age < 18) {
-    underageSale = (priceTicket * 25 / 100)
-    //console.log(underageSale)
-    priceSaleTicket = (priceTicket - underageSale)
-    //console.log(priceSaleTicket)
+    sale = (priceTicket * 25 / 100)
+    //console.log(sale)
+
 }
 else if (user_age > 65) {
-    seniorSale = (priceTicket * 40 / 100)
-    //console.log(seniorSale)
-    priceSaleTicket = (priceTicket - seniorSale)
-   //console.log(priceSaleTicket)
+    sale = (priceTicket * 40 / 100)
+
 }
+else {
+    sale = 0
+}
+//console.log(sale)
+
 
 //Generare un output per l utente
+
+document.getElementById("price_ticket").innerHTML = "Il prezzo del tuo biglietto è: " + (priceTicket - sale) + "Euro"

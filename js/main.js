@@ -1,11 +1,12 @@
 
 
 //Chiedere all utente la sua età
-const user_age = prompt('Quanti anni hai?')
+const user_age = parseInt(prompt('Quanti anni hai?'))
+console.log(user_age)
 
 
 //Chiedere all utente quanti km vuole percorrere
-const distance = prompt('Quanti chilometri vuoi percorrere?')
+const distance = parseInt(prompt('Quanti chilometri vuoi percorrere?'))
 console.log(distance)
 //Calcolare il prezzo del biglietto 
 
